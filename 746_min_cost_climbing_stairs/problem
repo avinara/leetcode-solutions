@@ -4,7 +4,6 @@ You can either start from the step with index 0, or the step with index 1.
 
 Return the minimum cost to reach the top of the floor.
 
- 
 
 Example 1:
 
@@ -26,7 +25,6 @@ Explanation: You will start at index 0.
 - Pay 1 and climb one step to reach the top.
 The total cost is 6.
  
-
 Constraints:
 
 2 <= cost.length <= 1000
