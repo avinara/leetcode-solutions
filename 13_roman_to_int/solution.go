@@ -1,7 +1,7 @@
 package main
 
 func romanToInt(s string) int {
-	var current, left, total int
+	var current, last, total int
 	romanIntMap := map[uint8]int{
 		'I': 1,
 		'V': 5,
@@ -13,12 +13,12 @@ func romanToInt(s string) int {
 	}
 	for i := len(s) - 1; i >= 0; i-- {
 		current = romanIntMap[s[i]]
-		if current < left {
+		if current < last {
 			total = total - current
 		} else {
 			total = total + current
 		}
-		left = current
+		last = current
 	}
 
 	return total
